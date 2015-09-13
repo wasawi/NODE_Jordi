@@ -3,11 +3,19 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
 
+	ofLog(OF_LOG_NOTICE)<< "program started!";
+	
+	variableToCrash = 1;
+	
+	ofLog(OF_LOG_NOTICE)<< "variableToCrash = " + variableToCrash;
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
 
+	variableToCrash = variableToCrash / 0;
+
+	ofLog(OF_LOG_NOTICE)<< "program crashed";
 }
 
 //--------------------------------------------------------------

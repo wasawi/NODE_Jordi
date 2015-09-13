@@ -3,24 +3,20 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
 
-	ofLog(OF_LOG_NOTICE)<< "program started!";
+	// Uncomment the following line to see the error:
+	// This is not going to compile for sure!
 	
-	variableToCrash = 1;
 	
-	ofLog(OF_LOG_NOTICE)<< "variableToCrash = " variableToCrash;
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
 
-	variableToCrash = variableToCrash / 0;
-
-	ofLog(OF_LOG_NOTICE)<< "program crashed";
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-
+	ofDrawBitmapStringHighlight("no error here", 200,200);
 }
 
 //--------------------------------------------------------------
