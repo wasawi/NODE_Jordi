@@ -24,5 +24,5 @@ void ofApp::draw(){
 	// Draw Alvaro's color
 	ofSetColor(colorAlvaro);
 	ofRect(200, 200, 100, 100);
-	ofDrawBitmapStringHighlight("Alvaro's color", 100,200);
+	ofDrawBitmapStringHighlight("Alvaro's color", 200,300);
 }
