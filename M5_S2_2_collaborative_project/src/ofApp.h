@@ -9,5 +9,6 @@ class ofApp : public ofBaseApp{
 		void draw();
 	
 	ofColor colorJordi;
+	ofColor colorAlvaro;
 	
 };
