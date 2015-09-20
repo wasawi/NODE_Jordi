@@ -5,7 +5,12 @@ void ofApp::setup(){
 
 	// define Jordi's color
 	colorJordi = ofColor(0,255,255);
+
+    // define Alvaro's color
 	colorAlvaro = ofColor(0,255,100);
+
+    // define Fernando's color
+    colorFernando = ofColor(0,0,0);
 }
 
 //--------------------------------------------------------------
@@ -25,4 +30,9 @@ void ofApp::draw(){
 	ofSetColor(colorAlvaro);
 	ofRect(200, 200, 100, 100);
 	ofDrawBitmapStringHighlight("Alvaro's color", 200,300);
+
+	// Draw Fernando's color
+    ofSetColor(colorFernando);
+    ofRect(400, 400, 100, 100);
+    ofDrawBitmapStringHighlight("Fernando's color", 400,500);
 }
