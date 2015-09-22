@@ -35,12 +35,12 @@ void ofApp::draw(){
 	ofDrawBitmapStringHighlight("Alvaro's color", 200,300);
 
 	// Draw Fernando's color
-    	ofSetColor(colorFernando);
-    	ofRect(400, 400, 100, 100);
-    	ofDrawBitmapStringHighlight("Fernando's color", 400,500);
+	ofSetColor(colorFernando);
+	ofRect(400, 400, 100, 100);
+	ofDrawBitmapStringHighlight("Fernando's color", 400,500);
 
 	// Draw JuanCarlos’s color
 	ofSetColor(colorJuanCarlos);
 	ofRect(100, 400, 100, 100);
-	ofDrawBitmapStringHighlight(“JuanCarlos’s color", 100,500);
+	ofDrawBitmapStringHighlight("JuanCarlos color", 100,500);
 }
