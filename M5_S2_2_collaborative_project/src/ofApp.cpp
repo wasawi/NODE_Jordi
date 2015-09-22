@@ -29,39 +29,29 @@ void ofApp::draw(){
 //	ofRect(100, 100, 100, 100);
 //	ofDrawBitmapStringHighlight("Jordi's color", 100,200);
 
-	dibujaRecuadro(colorJordi, ofPoint(100,100), 100, 300, "Jordi's color");
+	r.dibujaRecuadro(colorJordi, ofPoint(100,100), 100, 300, "Jordi's color");
 	
 	// Draw Alvaro's color
 //	ofSetColor(colorAlvaro);
 //	ofRect(200, 200, 100, 100);
 //	ofDrawBitmapStringHighlight("Alvaro's color", 200,300);
 
-	dibujaRecuadro(colorAlvaro, ofPoint(200,200), 100, 100, "Alvaro's color");
+	r.dibujaRecuadro(colorAlvaro, ofPoint(200,200), 100, 100, "Alvaro's color");
 	
 	// Draw Fernando's color
 //	ofSetColor(colorFernando);
 //	ofRect(400, 400, 100, 100);
 //	ofDrawBitmapStringHighlight("Fernando's color", 400,500);
 
-	dibujaRecuadro(colorFernando, ofPoint(400,400), 100, 100, "Fernando's color");
+	r.dibujaRecuadro(colorFernando, ofPoint(400,400), 100, 100, "Fernando's color");
 	
 	// Draw JuanCarlos’s color
 //	ofSetColor(colorJuanCarlos);
 //	ofRect(100, 400, 100, 100);
 //	ofDrawBitmapStringHighlight("JuanCarlos color", 100,500);
 	
-	dibujaRecuadro(colorJuanCarlos, ofPoint(100,400), 100, 100, "JuanCarlos color");
+	r.dibujaRecuadro(colorJuanCarlos, ofPoint(100,400), 100, 100, "JuanCarlos color");
 	
-}
-
-
-//--------------------------------------------------------------
-void ofApp::dibujaRecuadro(ofColor myColor, ofPoint pos, int w, int h, string texto){
-	
-	
-	ofSetColor(myColor);
-	ofRect(pos, w, h);
-	ofDrawBitmapStringHighlight(texto, pos.x, pos.y + h);
 }
 
 
