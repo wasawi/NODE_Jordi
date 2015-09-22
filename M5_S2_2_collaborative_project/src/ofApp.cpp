@@ -29,7 +29,7 @@ void ofApp::draw(){
 //	ofRect(100, 100, 100, 100);
 //	ofDrawBitmapStringHighlight("Jordi's color", 100,200);
 
-	dibujaRecuadro(colorJordi, ofPoint(100,100), 100, 100, "Jordi's color");
+	dibujaRecuadro(colorJordi, ofPoint(100,100), 100, 300, "Jordi's color");
 	
 	// Draw Alvaro's color
 //	ofSetColor(colorAlvaro);
@@ -61,7 +61,7 @@ void ofApp::dibujaRecuadro(ofColor myColor, ofPoint pos, int w, int h, string te
 	
 	ofSetColor(myColor);
 	ofRect(pos, w, h);
-	//ofDrawBitmapStringHighlight(texto, 100,200);
+	ofDrawBitmapStringHighlight(texto, pos.x, pos.y + h);
 }
 
 
