@@ -15,4 +15,5 @@ class ofApp : public ofBaseApp{
 	ofColor colorAlvaro;
 	ofColor colorFernando;
 	ofColor colorJuanCarlos;
+	ofColor colorSergio;
 };
