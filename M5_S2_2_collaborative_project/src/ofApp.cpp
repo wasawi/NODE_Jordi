@@ -14,6 +14,9 @@ void ofApp::setup(){
 
     // define JuanCarlos’s color
     colorJuanCarlos = ofColor(35,96,145);
+
+	// define Sergio color
+	colorSergio = ofColor(255,0,100);
 }
 
 //--------------------------------------------------------------
@@ -51,19 +54,7 @@ void ofApp::draw(){
 //	ofDrawBitmapStringHighlight("JuanCarlos color", 100,500);
 	
 	r.dibujaRecuadro(colorJuanCarlos, ofPoint(100,400), 100, 100, "JuanCarlos color");
-	
+
+
+	r.dibujaRecuadro(colorJuanCarlos, ofPoint(200,300), 100, 100, "Sergio's color");	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
