@@ -1,0 +1,17 @@
+#N canvas 808 114 450 300 10;
+#X declare -lib mrpeach;
+#X obj 34 78 unpackOSC;
+#X obj 34 109 pipelist;
+#X obj 34 47 udpreceive 12345;
+#X obj 34 140 routeOSC /test /mouse/position /mouse/button;
+#X obj 34 210 print test;
+#X obj 121 209 print mousePosition;
+#X obj 208 184 print mouseButton;
+#X obj 185 46 import mrpeach;
+#X connect 0 0 1 0;
+#X connect 0 1 1 1;
+#X connect 1 0 3 0;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 3 1 5 0;
+#X connect 3 2 6 0;
