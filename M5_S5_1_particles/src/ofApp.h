@@ -10,5 +10,6 @@ class ofApp : public ofBaseApp{
 		void draw();
 
 	Particle p;
-
+	vector <Particle> particles;
+	int numParticles = 100;
 };
