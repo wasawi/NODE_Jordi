@@ -1,7 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
-#include "recuadro.h"
+#include "Particle.h"
 
 class ofApp : public ofBaseApp{
 	public:
@@ -9,6 +9,6 @@ class ofApp : public ofBaseApp{
 		void update();
 		void draw();
 
-	recuadro r;
+	Particle p;
 
 };
