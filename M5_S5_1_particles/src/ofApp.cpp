@@ -15,6 +15,9 @@ void ofApp::setup(){
 //--------------------------------------------------------------
 void ofApp::update(){
 
+	for (int i=0; i<numParticles; i++) {
+		particles[i].update();
+	}
 }
 
 //--------------------------------------------------------------
@@ -22,5 +25,20 @@ void ofApp::draw(){
 
 	for (int i=0; i<numParticles; i++) {
 		particles[i].draw();
+	}
+}
+
+//--------------------------------------------------------------
+void ofApp::moveParticles(){
+	
+	for (int i=0; i<numParticles; i++) {
+		particles[i].setVelocity(ofPoint(ofRandom(-1., 1.), ofRandom(-1., 1.)));
+	}
+}
+
+//--------------------------------------------------------------
+void ofApp::keyPressed(int key){
+	if (key==' '){
+		moveParticles();
 	}
 }

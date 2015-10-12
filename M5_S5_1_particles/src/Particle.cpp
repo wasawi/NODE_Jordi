@@ -16,9 +16,21 @@ void Particle::setup(ofColor particle_color, ofPoint particle_position, int part
 }
 
 //--------------------------------------------------------------
+void Particle::update(){
+	
+	position += velocity;
+}
+
+
+//--------------------------------------------------------------
 void Particle::draw(){
 
 	ofSetColor(color);
 	ofCircle(position.x, position.y, radius);
 
+}
+
+//--------------------------------------------------------------
+void Particle::setVelocity(ofPoint particle_velocity){
+	velocity = particle_velocity;
 }
