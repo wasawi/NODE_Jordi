@@ -11,9 +11,4 @@ class ofApp : public ofBaseApp{
 
 	recuadro r;
 
-	ofColor colorJordi;
-	ofColor colorAlvaro;
-	ofColor colorFernando;
-	ofColor colorJuanCarlos;
-	ofColor colorSergio;
 };
