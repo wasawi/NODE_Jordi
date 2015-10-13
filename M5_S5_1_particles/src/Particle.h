@@ -23,5 +23,7 @@ private:
 	ofPoint	position;
 	ofPoint	velocity;
 	int radius;
+	float gravity;
+	float friction;
 	
 };

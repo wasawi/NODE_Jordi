@@ -38,7 +38,7 @@ void ofApp::moveParticles(){
 
 	// set Particle's velocity
 	for (int i=0; i<numParticles; i++) {
-		particles[i].setVelocity(ofPoint(ofRandom(-1., 1.), ofRandom(-1., 1.)));
+		particles[i].setVelocity(ofPoint(ofRandom(-10., 10.), ofRandom(-10., 10.)));
 	}
 }
 
